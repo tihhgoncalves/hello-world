@@ -28,7 +28,7 @@ O estilo do seu terminal mudou, certo? Ao invés de você ter o popular `$` indi
 
 Aparecerá algo parecido com isso:
 
-![alt Print do Terminal carregado com o ZSH](zsh10.png "ZSH carregado no terminal")
+![alt Print do Terminal carregado com o ZSH](terminal-zsh-10.png "ZSH carregado no terminal")
 
 
 ## Configurando o ZSH como shell padrão
@@ -43,7 +43,7 @@ sudo gedit /etc/passwd
 
 Dentro do arquivo, procure pela linha que começa com o seu nome de usuário. No meu caso, o meu usuário é *tihhgoncalves*, encontrei ele na linha 45:
 
-![alt Print do passwd aberto em um editor de texto com o meu usuário selecionado](passwd.png "Encontrando seu usuário no passwd")
+![alt Print do passwd aberto em um editor de texto com o meu usuário selecionado](terminal-zsh-15.png "Encontrando seu usuário no passwd")
 
 No final dessa linha com o seu usuário, terá um `:bin/bash` e o que precisamos fazer é trocar para `:bin/zsh`.
 
@@ -58,12 +58,12 @@ Pronto! Agora se você abrir novamente o terminal, já deve vir com o ZSH carreg
 Agora que o ZSH já está instalado e configurado pra ser carregado automaticamente, vou compartilhar a minha configuração pessoal. Você pode simplesmente copiar como eu irei fazer ou usar como ponto de partida para configurar no estilo que você mais gosta.
 
 Você já deve ter notado que sempre que o ZSH abre, ele aparece uma tela que você precisa dar um ENTER pra continuar. Uma tela como essa:
-![](zsh20.png)
+![](terminal-zsh-20.png)
 
 Conforme indicado no próprio texto que aparece, pra que essa introdução não apareça mais, você precisará criar um arquivo `~/.zshrc` Você pode dizer pra ele criar automaticamente teclando o número 2.
 
 Você vai reparar que automaticamente o estilo vai já dar uma melhorada:
-![](zsh30.png)
+![](terminal-zsh-30.png)
 
 Agora já temos configurado um arquivo que nos permite customizar o ZSH. E eu gosto de utilizar um projetinho legal chamado "OH MY ZSH" que vai te permitir customizar um monte de coisa no ZSH. Você pode dar uma olhada  [no GitHub do OH MY ZSH](https://github.com/ohmyzsh/ohmyzsh).
 
@@ -76,7 +76,7 @@ sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools
 > **P.S.:** Talvez você não tenha o `git` instalado. Então se precisar instalá-lo, é só utitlizar essa comando antes: `sudo apt install git`
 
 Você vai notar que novamente o estilo irá mudar. Ficará algo assim:
-![](zsh40.png)
+![](terminal-zsh-40.png)
 
 Agora vamos voltar naquele arquivo de customização do ZSH:
 
@@ -85,7 +85,7 @@ sudo gedit ~/.zshrc
 ```
 
 Dentro do arquivo procure pela linha que tem o "ZSH_THEME":
-![](zsh50.png)
+![](terminal-zsh-50.png)
 
 Nessa linha, você poderá escolher qual tema deseja utilizar. Caso você queira fazer uns testes, ele já baixou no seu computador um monte de temas, que você poderá encontrar nesse diretório: `~/.oh-my-zsh/themes`
 
@@ -98,7 +98,7 @@ ZSH_THEME="bira"
 ```
 
 E txaram! Aqui está o meu terminal:
-![](zsh60.png)
+![](terminal-zsh-60.png)
 
 ## Usuário root
 Se vocẽ precisar utulizar o `sudo su` no seu terminal, irá perceber que o ZSH não será carregado. Para resolver isso, o primeiro passo é fazer o mesmo que você fez com o seu usuário, mas agora com o usuário `root`, dentro do arquivo `/etc/passwd`. 
