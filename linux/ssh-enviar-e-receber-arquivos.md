@@ -34,4 +34,6 @@ scp -r usuarioMaquinaRemota@ipDaMaquinaRemota:/home/diretorioRemoto/pasta/ /home
 ```
 
 É isso aí.
-Qualquer dúvida, deixe nos comentários.
+
+@tihhgoncalves
+
